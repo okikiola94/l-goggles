@@ -1,0 +1,59 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+ul, ol {
+  padding: 0;
+  list-style: none;
+}
+p{
+  font-size: 1rem;
+}
+
+h4{
+  font-size: 2rem;
+}
+a {
+  color: inherit; 
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.bg-gradient-custom :hover {
+  background: linear-gradient(90deg, #000000, #737373);
+  
+}
+.projects-section a{
+display: none;
+}
+
+.projects-section :hover a{
+  display: block;
+  }

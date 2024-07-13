@@ -1,0 +1,90 @@
+/* Hero Section CSS */
+
+.hero-text {
+    font-size: 3rem; /* Increased font size */
+    transition: all 0.5s ease-in-out;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-text {
+      font-size: 4rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-text {
+      font-size: 5rem;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .hero-text {
+      font-size: 6rem;
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .hero-text {
+      font-size: 7rem;
+    }
+  }
+  
+  .animate-hero-text {
+    animation: slide-in 5s infinite; /* Slowed down the animation */
+  }
+  
+  .animate-hero-text-right {
+    animation: slide-in-right 5s infinite; /* Slowed down the animation */
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+      filter: blur(5px);
+    }
+    50% {
+      transform: translateX(0%);
+      filter: blur(0px);
+    }
+    100% {
+      transform: translateX(-100%);
+      filter: blur(5px);
+    }
+  }
+  
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(100%);
+      filter: blur(5px);
+    }
+    50% {
+      transform: translateX(0%);
+      filter: blur(0px);
+    }
+    100% {
+      transform: translateX(100%);
+      filter: blur(5px);
+    }
+  }
+  
+  .animate-letter {
+    display: inline-block;
+    animation: rotate-letter 1s infinite;
+  }
+  
+  @keyframes rotate-letter {
+    0%, 100% {
+      transform: rotate(0deg);
+      filter: blur(0px);
+    }
+    50% {
+      transform: rotate(360deg);
+      filter: blur(2px);
+    }
+  }
+  
+  /* Hide the horizontal scrollbar */
+  body {
+    overflow-x: hidden;
+  }
+  
